@@ -4,8 +4,11 @@
 
 <script>
     import {onMount} from "svelte"
+	import MetaTags from "./MetaTags.svelte";
 
 </script>
+
+<MetaTags/>
 
 <div>
 	<div class="main_container">
