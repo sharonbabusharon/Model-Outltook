@@ -17,11 +17,11 @@
     const PUBLIC_DOMAIN_NAME = env.PUBLIC_DOMAIN_NAME;
 
     let website_full_url = PUBLIC_WEBSITE_ROOT_URL;
-    let meta_tag_image_full_url = `https://${website_full_url}/favicon.png`;
-    let meta_tag_thumb_full_url = `https://${website_full_url}/favicon.png`;
+    let meta_tag_image_full_url = `${website_full_url}/logos/model_outlook_square_logo.jpg`;
+    let meta_tag_thumb_full_url = `${website_full_url}/logos/model_outlook_square_logo.jpg`;
 
     onMount(() => {
-        console.log('env', env)
+        // console.log('env', env)
     });
 
 </script>
