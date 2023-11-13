@@ -25,7 +25,7 @@
               <div class="details">
                 <div class="main_content">
                   <div class="content_image">
-                    <img src="/assets/more/image1.png" alt="">
+                    <img  loading="lazy"  src="/assets/more/image1.png" alt="">
                   </div>
                   <div class="content_details">
                     <div class="content_heading">
@@ -47,8 +47,8 @@
                   <div class="content_image_2">
   
                     <div class="images">
-                      <img src="/assets/more/image3.png" alt="">
-                      <img src="/assets/more/image5.png" alt="">
+                      <img  loading="lazy"  src="/assets/more/image3.png" alt="">
+                      <img  loading="lazy" src="/assets/more/image5.png" alt="">
                     </div>
                     
                   </div>
@@ -72,8 +72,8 @@
                   <div class="content_image_3">
   
                     <div class="images">
-                      <img src="/assets/more/time2.png" alt="">
-                      <img src="/assets/more/time3.png" alt="">
+                      <img  loading="lazy" src="/assets/more/time2.png" alt="">
+                      <img  loading="lazy" src="/assets/more/time3.png" alt="">
                     </div>
   
                   </div>

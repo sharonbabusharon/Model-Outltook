@@ -27,7 +27,7 @@ let text;
         { customer_name: 'Sarath Krishna', 
           customer_message: '"Using the model portfolio website template has been a game-changer for me. Its incredibly user-friendly and customizable, allowing me to showcase my work with style and ease."',
           customer_image:{
-              url:"/assets/testimonial/sarath.jpg"
+              url:"/assets/testimonial/sarath.webp"
           }  ,
           customer_link:"https://modeloutlook.com/Sarath"
         }
@@ -140,16 +140,16 @@ let text;
 				<div class="name_div">
 					<h1 id="text" bind:this={text}>Model</h1>
 					
-					<img class="rotate_1" src="/assets/about/elip2.png
+					<img loading="lazy" class="rotate_1" src="/assets/about/elip2.png
 					" alt="">
 				</div>
 				<div class="animation_div">
-					<img id="back"
-						src="/assets/about/phoneback.png"
+					<img  loading="lazy"  id="back" 
+						src="/assets/about/phoneback_compressed.png"
 						alt=""
 					/>
-                    <img id="front"
-                    src="/assets/about/athira.gif"
+                    <img  loading="lazy" id="front"
+                    src="/assets/about/athira_optimised.webp"
                     alt=""
                 />
          
@@ -158,7 +158,7 @@ let text;
 					<h1 id="text_2" bind:this={text_2}>Outlook</h1>
 
 					
-					<img  class="rotate_2" src="/assets/about/elip1.png" alt="">
+					<img  loading="lazy"  class="rotate_2" src="/assets/about/elip1.png" alt="">
 					
 
 				</div>

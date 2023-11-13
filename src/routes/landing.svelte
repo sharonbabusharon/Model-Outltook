@@ -45,7 +45,7 @@
 
 		<div class="hero_container">
 			<div class="left_png">
-				<img src="/assets/landing/left.png" alt="">
+				<img  loading="lazy"  src="/assets/landing/left.png" alt="">
 			</div>
 			<div class="middle_hero_section">
 				<div class="middle_hero_section_part_1">
@@ -118,7 +118,7 @@
 				</div>
 			</div>
 			<div class="right_png">
-				<img src="/assets/landing/right.png" alt="">
+				<img loading="lazy"   src="/assets/landing/right.png" alt="">
 			</div>
 		</div>
 	</div>
