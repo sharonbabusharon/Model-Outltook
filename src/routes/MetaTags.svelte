@@ -12,9 +12,9 @@
     meta_title = 'Model Outlook - Portfolio Websites: Your Work, Magnificently Displayed';
     meta_description = 'Your journey, our canvas';
 
-    const PUBLIC_WEBSITE_ROOT_URL = env.PUBLIC_WEBSITE_ROOT_URL;
-    const COMPANY_NAME = env.COMPANY_NAME;
-    const PUBLIC_DOMAIN_NAME = env.PUBLIC_DOMAIN_NAME;
+    const PUBLIC_WEBSITE_ROOT_URL = env.PUBLIC_WEBSITE_ROOT_URL || 'https://www.modeloutlook.com';
+    const COMPANY_NAME = env.COMPANY_NAME || 'Binary Technologies';
+    const PUBLIC_DOMAIN_NAME = env.PUBLIC_DOMAIN_NAME || 'www.modeloutlook.com';
 
     let website_full_url = PUBLIC_WEBSITE_ROOT_URL;
     let meta_tag_image_full_url = `${website_full_url}/logos/model_outlook_square_logo.jpg`;
