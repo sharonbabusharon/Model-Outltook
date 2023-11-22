@@ -218,13 +218,7 @@
     margin-bottom: 20px;
     font-family: "Poppins", sans-serif;
   }
-  #login-container .social {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: calc(100% - 40px);
-    margin: 0 auto;
-  }
+
   #login-container .social a {
     text-align: center;
     border: solid 2px #ff6b6c;
