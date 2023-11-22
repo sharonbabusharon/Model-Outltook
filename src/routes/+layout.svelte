@@ -11,21 +11,22 @@
 <MetaTags/>
 
 <div>
-	<div class="main_container">
+	<div class="main_container"  itemscope itemtype="https://schema.org/Organization">
 		<div class="elipse_1">
 			<img src="/assets/elip1.png" alt="" />
 		</div>
 		<div class="contact_container" id="contact_div">
 			<div class="contact">
 				<div class="first_container">
-					<div class="logo_main">
-						<img src="/assets/contact/Model_outlook_logo_Transparent.png" alt="" />
+					<div class="logo_main"  itemprop="logo" itemscope itemtype="https://schema.org/ImageObject">
+						<meta itemprop="caption" content="Model Outlook Logo"/>
+						<img itemprop="contentUrl" src="/assets/contact/Model_outlook_logo_Transparent.png" alt="" />
 					</div>
 					<div class="heading">
-						<h3>Model Outlook</h3>
+						<h3  itemprop="brand" itemscope itemtype="https://schema.org/Brand">Model Outlook</h3>
 					</div>
 					<div class="contact_about">
-						<p>
+						<p  itemprop="description">
 							We are dedicated to your success, and our team is here to assist you every step of the way. Feel free to reach out with any questions or feedback, we're excited to be part of your modeling journey!
 						</p>
 					</div>
@@ -46,7 +47,7 @@
 							<div class="address_head">
 								<h4>office</h4>
 							</div>
-							<p>Binary Technologies
+							<p  itemprop="address" itemscope itemtype="https://schema.org/PostalAddress">Binary Technologies
 
 								Room No. 67/4333, Ground Floor
 								
@@ -60,25 +61,28 @@
 				</div>
 
 				<div class="second_container">
-					<div class="second_container_first_part">
+					<div class="second_container_first_part"  itemscope itemtype="https://schema.org/CreativeWork">
 						<div class="resourses">
 							<div class="resourse_head">
 								<h4>Social</h4>
 							</div>
-							<div class="resourse_content">
-								<p><a id="links1"  href="https://instagram.com/binary.technologies?igshid=MzMyNGUyNmU2YQ==">Instagram</a></p>
-								<p><a id="links1"  href="https://twitter.com/BinaryTechsIN">Twitter</a></p>
-								<p><a id="links1"  href="https://www.linkedin.com/company/binarytechs/">Linkedin</a></p>
+							<div class="resourse_content"  itemscope itemtype="https://schema.org/CreativeWork">
+								<p><a id="links1"  itemprop="url"   href="https://instagram.com/binary.technologies?igshid=MzMyNGUyNmU2YQ==">Instagram</a></p>
+								<p><a id="links1"  itemprop="url"   href="https://twitter.com/BinaryTechsIN">Twitter</a></p>
+								<p><a id="links1"  itemprop="url"   href="https://www.linkedin.com/company/binarytechs/">Linkedin</a></p>
 							</div>
 						</div>
 						<div class="company">
 							<div class="company_head">
 								<h4>company</h4>
 							</div>
-							<div class="company_content">
-								<p><a id="links1"  href="/privacy_and_policy">Privacy Policy</a></p>
-								<p><a id="links1"  href="/refund_policy">Refund policy</a></p>
-								<p><a  id="links1" href="/terms_and_conditions">Terms and Conditions</a></p>
+							<div class="company_content" itemscope itemtype="https://schema.org/CreativeWork">
+			
+								<p><a id="links1"  itemprop="url"   href="/whymodeloutlook">Why Us?</a></p>
+								<p><a id="links1"  itemprop="url"   href="/privacy_and_policy">Privacy Policy</a></p>
+								<p><a id="links1"  itemprop="url"   href="/refund_policy">Refund policy</a></p>
+								<p><a id="links1"  itemprop="url"   href="/terms_and_conditions">Terms and Conditions</a></p>
+								
 							</div>
 						</div>
 						
@@ -88,7 +92,7 @@
 						<div class="second_container_second_part_content">
 							<h4>support</h4>
 						</div>
-						<div class="second_container_second_part_contents_list">
+						<div class="second_container_second_part_contents_list"   itemscope itemtype="https://schema.org/CreativeWork">
 							<p><a id="links" href="mailto:sales@binarytechs.in">sales@binarytechs.in</a> </p>
 							<p><a  id="links" href="tel:7994844456">+91 7994844456</a> </p>
 							<!-- <p>FAQ's</p>
