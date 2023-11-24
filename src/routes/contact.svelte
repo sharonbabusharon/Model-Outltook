@@ -24,30 +24,35 @@
     } else {
       console.log("error");
     }
+    document.getElementById("myForm").reset();
   }
 
     function validateform() {
-      if (!FormData.firstname) {
-        errors.firstname = "Enter First Name";
+    
+      if (
+        FormData.firstname.trim() === "" ||
+        !/^[a-zA-Z\s]*$/.test(FormData.lastname)
+      ) {
+        errors.lastname = "Please Enter a Valid First Name";
       }
 
       if (
         FormData.lastname.trim() === "" ||
         !/^[a-zA-Z\s]*$/.test(FormData.lastname)
       ) {
-        errors.lastname = "Please Enter a Valid Secondname";
+        errors.lastname = "Please Enter a Valid Second Name";
       }
 
       if (!FormData.message) {
         errors.message = "Please Enter a Message";
       }
 
-      // if (FormData.number === "" || !/^[0-9]{10}$/.test(FormData.number)) {
-      //   errors.number = "Please Enter a Valid 10-Digit Contact Number";
-      // }
-      if (!FormData.number) {
+      if (FormData.number === "" || !/^[0-9]{10}$/.test(FormData.number)) {
         errors.number = "Please Enter a Valid 10-Digit Contact Number";
       }
+      // if (!FormData.number) {
+      //   errors.number = "Please Enter a Valid 10-Digit Contact Number";
+      // }
 
       if (Object.keys(errors).length === 0) {
         return true;
@@ -59,7 +64,7 @@
 <div class="main_container">
   <div class="form">
     <!-- on:submit|preventDefault={handlesubmit} -->
-    <form on:submit={handlesubmit}>
+    <form id="myForm" on:submit|preventDefault={handlesubmit}>
       <div class="title">Contact Us</div>
       <div class="subtitle">Let's create your MODEL OUTLOOK.</div>
       <div class="names">
@@ -142,6 +147,7 @@
   #error {
     color: red;
     margin-top: 6px;
+    z-index: 1;
   }
   form {
     width: 40%;
@@ -210,6 +216,7 @@
     transform: translateY(0);
     transition: transform 200ms;
     width: 76%;
+    z-index: -1;
   }
   .names {
     width: 100%;
@@ -222,6 +229,7 @@
 
   .cut-short {
     width: 86%;
+    z-index: -1;
   }
 
   .input:focus ~ .cut,

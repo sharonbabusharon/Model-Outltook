@@ -12,9 +12,7 @@
 
 <div>
 	<div class="main_container"  itemscope itemtype="https://schema.org/Organization">
-		<div class="elipse_1">
-			<img src="/assets/elip1.png" alt="" />
-		</div>
+		
 		<div class="contact_container" id="contact_div">
 			<div class="contact">
 				<div class="first_container">
@@ -359,7 +357,7 @@
 		}
 		.contact_container {
 			height: auto;
-			padding-top: 0px;
+			padding-top: 30px;
 		}
 		.contact h4 {
 			font-weight: 700;
@@ -418,7 +416,7 @@
 		}
 		.contact_container {
 			height: auto;
-			padding-top: 0px;
+			padding-top: 30px;
 			background-position: -60% 120%;
 		}
 		.contact h4 {
