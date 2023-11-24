@@ -4,35 +4,36 @@
 </script>
 
 <div>
-    <div class="main_container">
+    <div class="main_container"  itemscope itemtype="https://schema.org/SoftwareApplication">
         <div class="more_details">
           
-          <div class="main_div">
+          <div class="main_div" itemprop="featureList">
             <div class="main_heading">
-              <h2 id="head">Support Whenever
+              <h2  itemprop="abstract" id="head">Support Whenever
                 You Need It</h2>
                 <div class="sub_div">
                   <div class="sub_text">
-                    <h2>Real-time support to grow your portfolio.</h2>
+                    <h2  itemprop="description">Real-time support to grow your portfolio.</h2>
                   </div>
                 </div>
             </div>
           </div>
   
           
-          <div class="details_div">
+          <div class="details_div"  itemscope itemtype="https://schema.org/SoftwareApplication">
             <div class="detail_container">
               <div class="details">
-                <div class="main_content">
-                  <div class="content_image">
-                    <img  loading="lazy"  src="/assets/more/image1.png" alt="">
+                <div class="main_content" itemprop="featureList">
+                  <div class="content_image" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                    <meta itemprop="caption" content="Model Outlook Features Image"/>
+                    <img   itemprop="contentUrl"  loading="lazy"  src="/assets/more/image1.png" alt="">
                   </div>
                   <div class="content_details">
                     <div class="content_heading">
-                      <h2>Templates that are designed to look great on mobile devices.</h2>
+                      <h2  itemprop="abstract">Templates that are designed to look great on mobile devices.</h2>
                     </div>
                     <div class="content_para">
-                      <p>Fully responsive templates, pages, and layouts are designed for a mobile-first experience so your work looks amazing on any screen.</p>
+                      <p  itemprop="description">Fully responsive templates, pages, and layouts are designed for a mobile-first experience so your work looks amazing on any screen.</p>
                     </div>
                   </div>
                 </div>
@@ -43,21 +44,23 @@
           <div class="details_div">
             <div class="detail_container">
               <div class="details">
-                <div class="main_content_2">
+                <div class="main_content_2" itemprop="featureList">
                   <div class="content_image_2">
   
-                    <div class="images">
-                      <img  loading="lazy"  src="/assets/more/image3.png" alt="">
-                      <img  loading="lazy" src="/assets/more/image5.png" alt="">
+                    <div class="images" itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                      <meta itemprop="caption" content="Model Outlook Features Image"/>
+                      <img  itemprop="contentUrl"   loading="lazy"  src="/assets/more/image3.png" alt="">
+                      <meta itemprop="caption" content="Model Outlook Features Image"/>
+                      <img  itemprop="contentUrl"  loading="lazy" src="/assets/more/image5.png" alt="">
                     </div>
                     
                   </div>
                   <div class="content_details">
                     <div class="content_heading">
-                      <h2>Update your website yourself</h2>
+                      <h2  itemprop="abstract">Update your website yourself</h2>
                     </div>
                     <div class="content_para">
-                      <p>Launch your new site as quickly as possible with hands-on help. Our Format Experts can build your photography website for you.</p>
+                      <p itemprop="description">Launch your new site as quickly as possible with hands-on help. Our Format Experts can build your photography website for you.</p>
                     </div>
                   </div>
                 </div>
@@ -68,27 +71,24 @@
           <div class="details_div">
             <div class="detail_container">
               <div class="details">
-                <div class="main_content">
+                <div class="main_content"  itemprop="featureList">
                   <div class="content_image_3">
   
-                    <div class="images">
-                      <img  loading="lazy" src="/assets/more/time2.png" alt="">
-                      <img  loading="lazy" src="/assets/more/time3.png" alt="">
+                    <div class="images"  itemprop="image" itemscope itemtype="https://schema.org/ImageObject">
+                      <meta itemprop="caption" content="Model Outlook Features Image"/>
+                      <img  itemprop="contentUrl"  loading="lazy" src="/assets/more/time2.png" alt="">
+                      <meta itemprop="caption" content="Model Outlook Features Image"/>
+                      <img  itemprop="contentUrl"  loading="lazy" src="/assets/more/time3.png" alt="">
                     </div>
   
                   </div>
                   <div class="content_details">
                     <div class="content_heading">
-                      <h2>24/7 help and support.</h2>
+                      <h2   itemprop="abstract">24/7 help and support.</h2>
                     </div>
                     <div class="content_para">
-                      <p>Our support team is made up of creators like you who are available to answer all Format questions 24/7. Go ahead, ask us anything about your portfolio website.</p>
-                      <!-- <i class="fa-brands fa-instagram"></i>
-                      <i class="fa-brands fa-whatsapp"></i>
-                      <i class="fa-brands fa-square-facebook"></i>
-                      <i class="fa-solid fa-location-dot"></i>
-                      <i class="fa-solid fa-phone"></i>
-                      <i class="fa-solid fa-envelope"></i> -->
+                      <p  itemprop="description">Our support team is made up of creators like you who are available to answer all Format questions 24/7. Go ahead, ask us anything about your portfolio website.</p>
+            
                     </div>
                   </div>
                 </div>
