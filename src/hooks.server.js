@@ -43,7 +43,7 @@ export const handle = async ({ event, request, url, resolve, cookies }) => {
 	});
 };
 
-global.MODEL_OUTLOOK = process.env.MODEL_OUTLOOK || 'C:\\Users\\nucbi\\OneDrive\\Desktop\\projects\\Model_Outlook_Online__V1_initial_code_with_git\\Model_Outlook_Online';
+global.MODEL_OUTLOOK = process.env.MODEL_OUTLOOK || 'C:\\Projects\\Model_Outlook_Online';
 // global.PUPPETEER_PDF_IMAGE_EXPORTER_ROOT_DIRECTORY = process.env.PUPPETEER_PDF_IMAGE_EXPORTER_ROOT_DIRECTORY || 'C:\\Binary_Projects\\Quotation Project\\puppeteer_pdf_image_exporter';
 
 
