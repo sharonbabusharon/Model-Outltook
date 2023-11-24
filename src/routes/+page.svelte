@@ -2,7 +2,7 @@
     import Landing from "./landing.svelte";
     import About from "./about.svelte";
     import MoreDetails from "./more_details.svelte";
-
+    import Contact from "./contact.svelte";
  
 
 
@@ -17,6 +17,7 @@
 <Landing/>
 <About/>
 <MoreDetails/>
+<Contact/>
 </div>
 
 

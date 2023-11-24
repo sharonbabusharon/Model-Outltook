@@ -1,4 +1,4 @@
-import path from "path";
+
 import {configure_globals} from "$lib/server/server_info.js";
 
 
@@ -43,7 +43,19 @@ export const handle = async ({ event, request, url, resolve, cookies }) => {
 	});
 };
 
+global.MODEL_OUTLOOK = process.env.MODEL_OUTLOOK || 'C:\\Users\\nucbi\\OneDrive\\Desktop\\projects\\Model_Outlook_Online__V1_initial_code_with_git\\Model_Outlook_Online';
+// global.PUPPETEER_PDF_IMAGE_EXPORTER_ROOT_DIRECTORY = process.env.PUPPETEER_PDF_IMAGE_EXPORTER_ROOT_DIRECTORY || 'C:\\Binary_Projects\\Quotation Project\\puppeteer_pdf_image_exporter';
 
+
+global.server_info = {};
+
+global.server_info.directories = {
+	root: global.MODEL_OUTLOOK
+};
+global.server_info.directories.src = global.server_info.directories.root + '/src';
+global.server_info.directories.static = global.server_info.directories.root + '/static';
+global.server_info.directories.routes = global.server_info.directories.src + '/routes';
+global.server_info.directories.model_data = global.server_info.directories.root + '/MODEL_DATA'
 
 
 export function get_platform_head_part_from_html(full_html) {

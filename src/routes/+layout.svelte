@@ -113,7 +113,7 @@
 		width: 100%;
 		height: auto;
 		overflow: hidden;
-        margin-top: 50px;
+  
 		background-color: rgba(255, 255, 255, 1.5);
 	}
 	
