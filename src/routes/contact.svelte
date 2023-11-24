@@ -1,6 +1,4 @@
 <script>
-
-
   let FormData = {
     firstname: "",
     lastname: "",
@@ -11,60 +9,81 @@
   let errors = {};
 
   async function handlesubmit() {
-    if (validateform()) {
-      const response = await fetch("/api/saveformdata", {
-        method: "POST",
-        body: JSON.stringify(FormData),
-        headers: {
-          "content-type": "application/json",
-        },
-      });
-      console.log("Form Validated");
-      await response.json();
-    } else {
-      console.log("error");
-    }
+    const response = await fetch("/api/saveformdata", {
+      method: "POST",
+      body: JSON.stringify(FormData),
+      headers: {
+        "content-type": "application/json",
+      },
+    });
+
+    console.log("Form Validated");
+    alert("your response has been successfully submitted");
+
+    await response.json();
     document.getElementById("myForm").reset();
+
+    errors = {};
   }
 
-    function validateform() {
-    
-      if (
-        FormData.firstname.trim() === "" ||
-        !/^[a-zA-Z\s]*$/.test(FormData.lastname)
-      ) {
-        errors.lastname = "Please Enter a Valid First Name";
-      }
-
-      if (
-        FormData.lastname.trim() === "" ||
-        !/^[a-zA-Z\s]*$/.test(FormData.lastname)
-      ) {
-        errors.lastname = "Please Enter a Valid Second Name";
-      }
-
-      if (!FormData.message) {
-        errors.message = "Please Enter a Message";
-      }
-
-      if (FormData.number === "" || !/^[0-9]{10}$/.test(FormData.number)) {
-        errors.number = "Please Enter a Valid 10-Digit Contact Number";
-      }
-      // if (!FormData.number) {
-      //   errors.number = "Please Enter a Valid 10-Digit Contact Number";
-      // }
-
-      if (Object.keys(errors).length === 0) {
-        return true;
+  function validateform() {
+    if (
+      FormData.firstname.trim() === "" ||
+      !/^[a-zA-Z\s]*$/.test(FormData.firstname)
+    ) {
+      errors.firstname = "Please Enter a Valid First Name";
+      return;
+    } else {
+      if (errors.firstname) {
+        delete errors.firstname;
       }
     }
-  
+
+    if (
+      FormData.lastname.trim() === "" ||
+      !/^[a-zA-Z\s]*$/.test(FormData.lastname)
+    ) {
+      errors.lastname = "Please Enter a Valid Second Name";
+      return;
+    } else {
+      if (errors.lastname) {
+        delete errors.lastname;
+      }
+    }
+
+    if (!FormData.message.length) {
+      errors.message = "Please Enter a Message";
+      return;
+    } else {
+      if (errors.message) {
+        delete errors.message;
+      }
+    }
+
+    if (FormData.number === "" || !/^[0-9]{10}$/.test(FormData.number)) {
+      errors.number = "Please Enter a Valid 10-Digit Contact Number";
+      return;
+    } else {
+      if (errors.number) {
+        delete errors.number;
+      }
+    }
+    // if (!FormData.number) {
+    //   errors.number = "Please Enter a Valid 10-Digit Contact Number";
+    // }
+
+    // if (Object.keys(errors).length === 0) {
+    //   return true;
+    // }
+
+    handlesubmit();
+  }
 </script>
 
 <div class="main_container">
   <div class="form">
     <!-- on:submit|preventDefault={handlesubmit} -->
-    <form id="myForm" on:submit|preventDefault={handlesubmit}>
+    <form id="myForm" on:submit|preventDefault={validateform}>
       <div class="title">Contact Us</div>
       <div class="subtitle">Let's create your MODEL OUTLOOK.</div>
       <div class="names">
@@ -283,49 +302,40 @@
     background-color: #06b;
   }
 
-
   /* large screen */
-@media (min-width:1920px)  {
-
-
-}
-/* desktops */
-@media (max-width:1919px) and (min-width:1200px) {
-
-
-}
-/* laptops */
-@media (max-width:1199px) and (min-width:992px) {
-
-
-}
-/* small tablets */
-@media (max-width:991px) and (min-width:768px) {
-
-  form{
-    width: 60%;
+  @media (min-width: 1920px) {
   }
-  .main_container{
-    padding-bottom: 100px;
+  /* desktops */
+  @media (max-width: 1919px) and (min-width: 1200px) {
+  }
+  /* laptops */
+  @media (max-width: 1199px) and (min-width: 992px) {
+  }
+  /* small tablets */
+  @media (max-width: 991px) and (min-width: 768px) {
+    form {
+      width: 60%;
+    }
+    .main_container {
+      padding-bottom: 100px;
+    }
+  }
+  /* extra small devices */
+  @media (max-width: 767px) and (min-width: 418px) {
+    form {
+      width: 90%;
+    }
+    .main_container {
+      padding-bottom: 100px;
+    }
   }
 
-}
-/* extra small devices */
-@media (max-width:767px) and  (min-width:418px) {
-  form{
-    width: 90%;
+  @media (max-width: 418px) {
+    form {
+      width: 95%;
+    }
+    .main_container {
+      padding-bottom: 100px;
+    }
   }
-  .main_container{
-    padding-bottom: 100px;
-  }
-}
-
-@media(max-width:418px){
-  form{
-    width: 95%;
-  }
-  .main_container{
-    padding-bottom: 100px;
-  }
-}
 </style>
