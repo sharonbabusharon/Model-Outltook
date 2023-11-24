@@ -429,6 +429,10 @@ let text;
     padding-bottom: 30px;
 	background-color: bisque;
 	border-radius: 20px;
+	  display: flex;
+	  justify-content: center;
+	  align-items: center;
+		flex-direction: column;
   }
   .customer_name{
     font-weight:700;
@@ -439,6 +443,7 @@ let text;
   .testimonial_inner .para{
      font-weight: 500 !important;
      font-family: 'Poppins', sans-serif;
+	  max-width: 70%;
   }
   #profile_links{
 	
@@ -1433,6 +1438,10 @@ top: -1rem;
 	width: 320px;
 	height: 250px;
 }
+		.testimonial_inner .para{
+
+			max-width: 90%;
+		}
 
 
 	}
@@ -1445,6 +1454,10 @@ top: -1rem;
 .testimonial_inner{
 	width: 80vw;
 }
+		.testimonial_inner .para{
+
+			max-width: 90%;
+		}
 
         #text {
 		
