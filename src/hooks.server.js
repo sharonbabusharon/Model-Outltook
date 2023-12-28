@@ -4,6 +4,7 @@ import {configure_globals} from "$lib/server/server_info.js";
 
 await configure_globals();
 
+
 export const handle = async ({ event, request, url, resolve, cookies }) => {
 
 

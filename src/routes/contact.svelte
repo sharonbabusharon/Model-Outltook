@@ -18,6 +18,7 @@
     });
 
     console.log("Form Validated");
+    console.log(FormData);
     alert("your response has been successfully submitted");
 
     await response.json();
@@ -148,6 +149,7 @@
       </div>
 
       <button type="submit" class="submit">submit</button>
+
     </form>
   </div>
 </div>
