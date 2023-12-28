@@ -1,4 +1,9 @@
 
+
+import {initialise_mongo_client} from "$lib/server/db_helper.js"
+
+
+
 export const directories = {
     root: process.env.ROOT_DIRECTORY || 'X:\\Projects\\Model_Outlook_Online'
 }
@@ -12,6 +17,8 @@ export async function configure_globals() {
     global.VERSION_CODE = process.env.VERSION_CODE || 1001;
 
 
+
+    await initialise_mongo_client();
 }
 
 
