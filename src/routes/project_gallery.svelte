@@ -350,7 +350,7 @@
         }
         .main{
             flex-wrap: nowrap;
-            justify-content: none;
+             justify-content: flex-start;
         }
         .wrap{
             overflow: visible;
@@ -365,7 +365,7 @@
         }
         .main{
             flex-wrap: nowrap;
-            justify-content: none;
+            justify-content: flex-start;
         }
         .wrap{
             overflow: visible;
