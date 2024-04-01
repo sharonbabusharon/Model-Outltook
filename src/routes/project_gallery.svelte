@@ -156,7 +156,8 @@
 </script>
 
 <section>
-    <h1>Model Outlooks</h1>
+    <h1>Live Portfolios</h1>
+    <p class="live_portfolio_caption">Click to see full page</p>
     <!-- <p>Custom websites</p> -->
     <!-- svelte-ignore a11y-no-noninteractive-element-interactions -->
     <!-- svelte-ignore a11y-click-events-have-key-events -->
@@ -307,6 +308,7 @@
         }
         img {
             width: 250px;
+            zoom: 0.8;
         }
         ul {
             flex-wrap: wrap;

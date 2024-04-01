@@ -33,7 +33,7 @@
 							<a id="links"  href="https://instagram.com/binary.technologies?igshid=MzMyNGUyNmU2YQ=="><i class="fa-brands fa-instagram logo" /></a>
 						</div>
 						<div class="whatsapp">
-							<a id="links"  href="tel:7994844456"><i class="fa-solid fa-phone logo" /></a>
+							<a id="links"  href="tel:917994844456"><i class="fa-solid fa-phone logo" /></a>
 						</div>
 						<div class="email">
 							<a id="links"  href="mailto:sales@binarytechs.in"><i class="fa-regular fa-envelope logo" /></a>
@@ -92,7 +92,7 @@
 						</div>
 						<div class="second_container_second_part_contents_list"   itemscope itemtype="https://schema.org/CreativeWork">
 							<p><a id="links" href="mailto:sales@binarytechs.in">sales@binarytechs.in</a> </p>
-							<p><a  id="links" href="tel:7994844456">+91 7994844456</a> </p>
+							<p><a  id="links" href="tel:917994844456">+91 7994844456</a> </p>
 							<!-- <p>FAQ's</p>
 							<p>Support</p> -->
 						</div>
