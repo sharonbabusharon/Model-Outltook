@@ -104,6 +104,9 @@ function handle_box_1_button_click(){
 			</div>
 		</div>
 	</div>
+
+<button on:click={handle_box_2_button_click} type="button" class="price_contact svelte-1al9hz" data-svelte-h="svelte-jlbueo">Get yours @ $25</button>
+
 	<a  itemprop="url" content="https://wa.me/917994844456"   href="https://wa.me/917994844456"><div  id="fixedbutton">
 		<img src="/assets/landing/contact2.png" >
 		
@@ -732,5 +735,24 @@ function handle_box_1_button_click(){
 	margin-bottom: 40px;
 }
 }
-   
+
+
+button.price_contact {
+	background-color: #000015;
+	border-radius: 3px;
+	border: 0;
+	box-sizing: border-box;
+	color: #eee;
+	cursor: pointer;
+	font-size: 18px;
+	height: 50px;
+	margin-top: 38px;
+	margin-bottom: 28px;
+	text-align: center;
+	width: 177px;
+	display: block;
+	margin: 0 auto;
+	/* margin-top: 20px; */
+}
+
 </style>

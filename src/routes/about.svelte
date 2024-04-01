@@ -1,5 +1,6 @@
 <script>
 import {onMount} from "svelte"
+import ProjectGallery from "./project_gallery.svelte";
 
 let text;
 	let text_2;
@@ -211,6 +212,7 @@ let text;
 
 
 
+		<ProjectGallery/>
 
 
 
