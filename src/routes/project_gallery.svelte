@@ -19,49 +19,49 @@
         items: [
             {
                 website_image: {
-                    url: "/assets/project_gallery/ann_james.jpg",
+                    url: "/assets/project_gallery/ann_james.webp",
                 },
                 website_link: "https://modeloutlook.com/Ann_James",
                 category: "car_1",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/appu.jpg",
+                    url: "/assets/project_gallery/appu.webp",
                 },
                 website_link: "https://modeloutlook.com/Appu",
                 category: "car_1",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/aryan.jpg",
+                    url: "/assets/project_gallery/aryan.webp",
                 },
                 website_link: "https://modeloutlook.com/Aryan_Kathuria",
                 category: "car_1",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/athirs.jpg",
+                    url: "/assets/project_gallery/athirs.webp",
                 },
                 website_link: "https://modeloutlook.com/Athira_Ravi",
                 category: "car_2",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/ayisha.jpg",
+                    url: "/assets/project_gallery/ayisha.webp",
                 },
                 website_link: "https://modeloutlook.com/Ayisha__Nashva",
                 category: "car_2",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/bensyrah.jpg",
+                    url: "/assets/project_gallery/bensyrah.webp",
                 },
                 website_link: "https://bensyrah.com/",
                 category: "car_2",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/chinju.jpg",
+                    url: "/assets/project_gallery/chinju.webp",
                 },
                 website_link: "https://chinjumadhusudhanan.in/",
                 category: "car_2",
@@ -69,77 +69,77 @@
 
             {
                 website_image: {
-                    url: "/assets/project_gallery/fiona.jpg",
+                    url: "/assets/project_gallery/fiona.webp",
                 },
                 website_link: "https://modeloutlook.com/FIONA_ROSE",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/heaven.jpg",
+                    url: "/assets/project_gallery/heaven.webp",
                 },
                 website_link: "https://modeloutlook.com/Heaven_Zairah",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/ishan.jpg",
+                    url: "/assets/project_gallery/ishan.webp",
                 },
                 website_link: "https://modeloutlook.com/Ishan_M_Anto",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/kid.jpg",
+                    url: "/assets/project_gallery/kid.webp",
                 },
                 website_link: "https://sashaisla.in/",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/leona.jpg",
+                    url: "/assets/project_gallery/leona.webp",
                 },
                 website_link: "https://modeloutlook.com/Janviya",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/mahin.jpg",
+                    url: "/assets/project_gallery/mahin.webp",
                 },
                 website_link: "https://modeloutlook.com/MAHIN_MONTIKA",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/ramseena.jpg",
+                    url: "/assets/project_gallery/ramseena.webp",
                 },
                 website_link: "https://modeloutlook.com/Ramseena_R_Rahim",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/ramya.jpg",
+                    url: "/assets/project_gallery/ramya.webp",
                 },
                 website_link: "https://modeloutlook.com/RAMYA_SUKUMARAN",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/rithu.jpg",
+                    url: "/assets/project_gallery/rithu.webp",
                 },
                 website_link: "https://modeloutlook.com/Rithu_manthra",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/sarath_chandran.jpg",
+                    url: "/assets/project_gallery/sarath_chandran.webp",
                 },
                 website_link: "https://modeloutlook.com/Sarath__chandran",
                 category: "car_3",
             },
             {
                 website_image: {
-                    url: "/assets/project_gallery/tess.jpg",
+                    url: "/assets/project_gallery/tess.webp",
                 },
                 website_link: "https://modeloutlook.com/TESSA_BIJO",
                 category: "car_3",
@@ -329,7 +329,7 @@
 	/* small tablets */
 	@media (max-width: 991px) and (min-width: 768px) {
 
-         section{
+        section{
             overflow: scroll;
         }
         .main{
@@ -339,13 +339,11 @@
         .wrap{
             overflow: visible;
         }
-
-       
 	}
 	/* extra small devices */
 	@media (max-width: 767px) and (min-width: 418px) {
 
-         section{
+        section{
             overflow: scroll;
         }
         .main{
