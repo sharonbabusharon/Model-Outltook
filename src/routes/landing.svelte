@@ -104,7 +104,7 @@ function handle_box_1_button_click(){
 			</div>
 		</div>
 	</div>
-	<a  itemprop="url" content="https://wa.me/7994844456"   href="https://wa.me/7994844456"><div  id="fixedbutton">
+	<a  itemprop="url" content="https://wa.me/917994844456"   href="https://wa.me/917994844456"><div  id="fixedbutton">
 		<img src="/assets/landing/contact2.png" >
 		
 	</div></a>
