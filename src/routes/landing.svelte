@@ -21,6 +21,15 @@
 
 let slider_array_of_events=['"GO FROM PRINT TO WEB!"','"EMBRACE LIVE UPDATES"','"INSTANTLY ACCESSIBLE"','"THE FUTURE OF MODELING"'],selected_item_index=0;function translateText(){selected_item_index==slider_array_of_events.length-1?selected_item_index=0:selected_item_index++}onMount(()=>{setInterval(function(){translateText()},4e3)});
 
+function handle_box_2_button_click(){
+	const link1 = document.getElementById('contact');
+	link1.click();
+}
+
+function handle_box_1_button_click(){
+	const link2=document.getElementById('contact');
+	link2.click();
+}
 
 
 </script>
@@ -67,22 +76,21 @@ let slider_array_of_events=['"GO FROM PRINT TO WEB!"','"EMBRACE LIVE UPDATES"','
 				</div>
 				<div class="middle_hero_section_part_2">
 					<div class="boxes">
-						<div class="box_1">
+						<div class="box_1" style="cursor: pointer;"  on:click={handle_box_1_button_click}>
 							<div class="details">
 								<h4>For Women</h4>
 								<p>Start Building Your Online Portfolio</p>
-								<a itemprop="url" content="#contact_div" href="#contact_div" id="contact"><h4 id="contact2" >Contact  <i class="fa-solid fa-arrow-right"></i></h4></a>
+								<a itemprop="url" content="#contact_div" href="#contact_form_div" id="contact"><h4 id="contact2" >Contact  <i class="fa-solid fa-arrow-right"></i></h4></a>
 							</div>
 							<div class="image_1">
 								<img src="/assets/landing/new_model2.png" alt="">
-
 							</div>
 						</div>
-						<div class="box_2">
+						<div class="box_2" style="cursor: pointer;" on:click={handle_box_2_button_click}>
 							<div class="details">
 								<h4>For Men</h4>
 								<p>Start Building Your Online Portfolio</p>
-								<a itemprop="url" content="#contact_div"    href="#contact_div" id="contact"><h4 id="contact">Contact  <i class="fa-solid fa-arrow-right"></i></h4></a>
+								<a itemprop="url" content="#contact_div"    href="#contact_form_div" id="contact"><h4 id="contact">Contact  <i class="fa-solid fa-arrow-right"></i></h4></a>
 							</div>
 							<div class="image_2">
 								<img src="/assets/landing/men3.png" alt="">
@@ -196,12 +204,12 @@ let slider_array_of_events=['"GO FROM PRINT TO WEB!"','"EMBRACE LIVE UPDATES"','
 #contact{
 	text-decoration: none;
 	color: white;
-	margin-top: 10px;
+	/* margin-top: 10px; */
 }
 #contact2{
 	text-decoration: none;
-	color: black;
-	margin-top: 10px;
+	/* color: black;
+	margin-top: 10px; */
 }
 .middle_hero_section_part_1{
 	width: 100%;

@@ -191,7 +191,7 @@ let text;
 		   {/if}
 			  <p class="customer_name">{testimonial.customer_name}</p>
 			  <p class="para">{testimonial.customer_message}</p>
-			  <a id="profile_links" target="_blank" href="{testimonial.customer_link}"><button class="button-17" role="button">view profile <img src="/assets/about/arrow.gif" alt="" id="arrow_gif"></button></a>
+			  <!-- <a id="profile_links" target="_blank" href="{testimonial.customer_link}"><button class="button-17" role="button">view profile <img src="/assets/about/arrow.gif" alt="" id="arrow_gif"></button></a> -->
 		  </div>
 		</div>
 	  {/each}
@@ -790,7 +790,7 @@ let text;
 		display: flex;
 		justify-content: center;
 		padding-top: 100px;
-		padding-bottom: 200px;
+		padding-bottom: 100px;
 	}
 	.properties {
 		width: 70%;

@@ -81,7 +81,7 @@
   }
 </script>
 
-<div class="main_container">
+<div class="main_container" id="contact_form_div">
   <div class="form">
     <!-- on:submit|preventDefault={handlesubmit} -->
     <form id="myForm" on:submit|preventDefault={validateform}>
@@ -148,13 +148,32 @@
         {/if}
       </div>
 
-      <button type="submit" class="submit">submit</button>
+      <button type="submit" class="submit">Submit</button>
 
     </form>
+
+    <div class="or_container" style="color: white;">
+      <h3 style="font-style: italic;">Or</h3>
+    </div>
+
+    <div class="button_container">
+    <a target="_blank" href="https://wa.me/7994844456"><button style="margin-top: 28px;" class="submit green" type="submit">Contact Us<i style="margin-left: 10px;" class="fa-brands fa-whatsapp"></i></button></a>
   </div>
+  </div>
+
+  
 </div>
 
 <style>
+  .button_container{
+    width: 40%;
+  }
+  .button_container .green{
+    background-color: green !important;
+  }
+  .button_container button{
+    width: 100%;
+  }
   .main_container {
     widows: 100%;
     height: auto;
@@ -162,8 +181,8 @@
     justify-content: center;
     align-items: center;
     background-color: #00003d;
-    padding-bottom: 70px;
-    padding-top: 100px;
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
   #error {
     color: red;
@@ -176,10 +195,11 @@
   }
   .form {
     box-sizing: border-box;
-    height: 500px;
+    height: auto;
     padding: 20px;
     width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
   }
@@ -295,7 +315,7 @@
     font-size: 18px;
     height: 50px;
     margin-top: 38px;
-
+    margin-bottom: 28px;
     text-align: center;
     width: 100%;
   }
@@ -304,40 +324,43 @@
     background-color: #06b;
   }
 
+
   /* large screen */
-  @media (min-width: 1920px) {
-  }
-  /* desktops */
-  @media (max-width: 1919px) and (min-width: 1200px) {
-  }
-  /* laptops */
-  @media (max-width: 1199px) and (min-width: 992px) {
-  }
-  /* small tablets */
-  @media (max-width: 991px) and (min-width: 768px) {
-    form {
-      width: 60%;
-    }
-    .main_container {
-      padding-bottom: 100px;
-    }
-  }
-  /* extra small devices */
-  @media (max-width: 767px) and (min-width: 418px) {
-    form {
+	@media (min-width: 1920px) {
+	}
+	/* desktops */
+	@media (max-width: 1919px) and (min-width: 1200px) {
+
+	}
+	/* laptops */
+	@media (max-width: 1199px) and (min-width: 992px) {
+
+
+	}
+	/* small tablets */
+	@media (max-width: 991px) and (min-width: 768px) {
+	
+	}
+	/* extra small devices */
+	@media (max-width: 767px) and (min-width: 418px) {
+  	#myForm{
       width: 90%;
     }
-    .main_container {
-      padding-bottom: 100px;
-    }
+         .button_container{
+    width: 90%;
   }
+	
+	}
 
-  @media (max-width: 418px) {
-    form {
-      width: 95%;
+	@media (max-width:418px){
+		#myForm{
+      width: 90%;
     }
-    .main_container {
-      padding-bottom: 100px;
-    }
+
+     .button_container{
+    width: 90%;
   }
+	}
+
+
 </style>
